@@ -32,6 +32,9 @@ const app = Vue.createApp({
         },
         stage4: {
           q1: 'ゲスト',
+        },
+        stage5:{
+          q1: 'リブート',
         }
       },
 
@@ -54,7 +57,10 @@ const app = Vue.createApp({
         ],
         stage4: [
           false, // 4-1
-          ]
+        ],
+        stage5: [
+          false,
+        ]
       },
 
       /* ステージの問題が全て正解かどうか */
@@ -63,6 +69,7 @@ const app = Vue.createApp({
         stage2: false,
         stage3: false,
         stage4: false,
+        stage5: false,
       },
 
       /* 次のステージを表示するかどうか
@@ -72,6 +79,7 @@ const app = Vue.createApp({
         stage1: false,
         stage2: false,
         stage3: false,
+        stage4: false,
       },
     }
   },
